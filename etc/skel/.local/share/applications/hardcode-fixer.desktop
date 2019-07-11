@@ -2,7 +2,7 @@
 Name=Fix Hardcoded Icons
 Comment=Change all hardcoded icons
 GenericName=change icons
-Exec=bash -c 'zenity --info --title="Fixing all hardcoded path icons" --text="An empty window means that all icons were already fixed.\n$(pkexec hardcode-fixer)" --width=500 --height=300' 
+Exec=bash -c 'zenity --info --title="Fixing all hardcoded path icons" --text="An empty window means that all icons were already fixed.\n$(lxqt-sudo /usr/bin/hardcode-fixer)" --width=500 --height=300' 
 Icon=apport
 Type=Application
 StartupNotify=true
